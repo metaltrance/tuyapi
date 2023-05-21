@@ -92,9 +92,9 @@ class TuyaDevice extends EventEmitter {
     // Socket connected state
     this._connected = false;
 
-    this._responseTimeout = 30; // Seconds
-    this._connectTimeout = 30; // Seconds
-    this._pingPongPeriod = 10; // Seconds
+    this._responseTimeout = 300; // Seconds
+    this._connectTimeout = 300; // Seconds
+    this._pingPongPeriod = 100; // Seconds
     this._pingPongTimeout = null;
     this._lastPingAt = new Date();
 
